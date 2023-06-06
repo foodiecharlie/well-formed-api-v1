@@ -1,4 +1,4 @@
-const Participant = require('./model.js')
+const Participant = require('./model')
 
 module.exports.getParticipantsByEvent = async (req, res) => {
     const participants = await Participant.find(

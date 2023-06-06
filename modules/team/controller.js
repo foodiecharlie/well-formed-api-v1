@@ -5,9 +5,9 @@ const UserProfile = require('../profile/model')
 
 module.exports.getTeamsByEvent = async (req, res) => {
     const teams = await Team.find(
-            { event: res.locals.event._id },
-            { event: 0 }
+            { event: res.locals.event._id }
         )
+        .populate('event', 'name slug')
         .populate({
             path: 'members',
             populate: {
@@ -48,7 +48,7 @@ module.exports.createTeam = async (req, res) => {
 
 module.exports.showTeam = async (req, res) => {
     const team = await Team.findById(req.params.teamId)
-        .populate('event', 'name slug')
+        .populate('event')
         .populate({
             path: 'members',
             populate: {
