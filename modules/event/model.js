@@ -32,7 +32,7 @@ const EventSchema = new mongoose.Schema({
     },
     imageUrl: {
         type: String,
-        default: 'https://source.unsplash.com/random',
+        default: './default_event_thumbnail.jpg',
     },
     location: {
         type: String,

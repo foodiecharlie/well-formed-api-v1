@@ -23,7 +23,7 @@ const TeamSchema = new mongoose.Schema({
     },
     imageUrl: {
         type: String,
-        default: 'https://source.unsplash.com/random',
+        default: './default_team_thumbnail.jpg',
     },
     idea: {
         type: String,
