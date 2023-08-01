@@ -5,7 +5,7 @@
     "description": "Well-formed | A.Team for Awesome Hackathons",
     "repository": {
         "type": "git",
-        "url": "https://github.com/charllly/well-formed-api-v1.git"
+        "url": "https://github.com/novo-learning/well-formed-api-v1.git"
     },
     "main": "index.js",
     "scripts": {
